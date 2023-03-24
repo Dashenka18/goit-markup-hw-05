@@ -19,9 +19,9 @@
             <nav class="logo-header-nav">
                 <a class="header-logo" href="./index.html">Web<span class="logo-color">Studio</span></a>
                 <ul class="header-nav">
-                    <li><a class="nav-link active" href="./index.html">Studio</a></li>
-                    <li><a class="nav-link active" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-link active" href="">Contacts</a></li>
+                    <li><a class="nav-link line active" href="./index.html">Studio</a></li>
+                    <li><a class="nav-link   active" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link  active" href="">Contacts</a></li>
                 </ul>
             </nav>
             <address class="adr-list">
@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-                    <button class="btn-hero active-btn" type="button"> Order Service</button>
+                    <button class="btn-hero active-btn" type="button" data-modal-open> Order Service</button>
             </div>
             
         </section>
@@ -363,5 +363,17 @@
     </div>
     
   </footer>
+
+  <!-- модальное окно -->
+  <div class="backdrop" data-modal>
+    <div class="window" >
+        <button type="button" class="close-btn" data-modal-close>
+            <svg class="svg-btn">
+                <use href="./images/icons.svg/symbol-defs-close.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+ </div>
+ <script src="./js/modal.js"></script>
 </body>
 </html>
