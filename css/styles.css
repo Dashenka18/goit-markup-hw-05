@@ -131,15 +131,7 @@ letter-spacing: 0.02em;
     .nav-link.line{
         color: var(--hover-color);
     }
-/* position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    left: 0px;
-    top: 44px;
-    background-color: var(--hover-color);
-    border-radius: 2px; */
+
 
 
 .nav-link {
@@ -209,6 +201,8 @@ address {
 
 .active:hover, .active:focus{
     color: var(--hover-color);
+    transition: var(--timing-cubic);
+
 }
 
 
@@ -218,11 +212,7 @@ address {
 
 
 
-/* background-image: linear-gradient(to right rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) );
-    background-image: url('../images/people-office\ 1\ \(1\).jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+
 
 .hero {
     margin-top: 0;
@@ -275,6 +265,7 @@ address {
   .active-btn:focus {
     color: var(--hero-title-buttons);
     background-color: var(--hover-color);
+    transition: var(--timing-cubic);
   }
 
 
@@ -522,6 +513,7 @@ address {
 }
 
 .icon-link:hover, .icon-link:focus{
+    transition: var(--timing-cubic);
     background-color: var(--hover-color);
 }
 
@@ -568,6 +560,7 @@ address {
 }
 
 .customers-link:hover, .customers-link:focus{
+    transition: var(--timing-cubic);
     fill: var(--hover-color);
     border: 1px solid var(--hover-color);
 }
@@ -622,7 +615,9 @@ border: 1px solid var(--buttons-2page)
 }
 
 .second-nav:hover, .second-nav:focus{
+    transition: var(--timing-cubic);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .services-list{
@@ -679,7 +674,6 @@ flex-wrap: wrap;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
     color: var(--cloud);
     
 
@@ -694,9 +688,9 @@ flex-wrap: wrap;
     overflow: hidden;
 }
 
-.th:hover .dsc,
-.th:focus .dsc{
-    transform: translate(0,0);
+.th:hover.dsc,
+.th:focus.dsc{
+    transition: translate(0,0) var(--timing-cubic);
 }
 
 .items-services{
@@ -713,6 +707,7 @@ flex-wrap: wrap;
 }
 
 .items-services:hover, .items-services:focus{
+    transition: var(--timing-cubic);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -791,6 +786,7 @@ flex-wrap: wrap;
   }
 
   .basement-link:hover, .basement-link:focus{
+    transition: var(--timing-cubic);
     background-color: var(--green-color);
   }
 
